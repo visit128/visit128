@@ -1,0 +1,900 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #414042; }
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+  .row.no-gutters > [class^="col-"],
+  .row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0; }
+
+.container.no-gutters, .container-fluid.no-gutters {
+  padding-right: 0;
+  padding-left: 0; }
+
+.anime {
+  opacity: 0; }
+
+.align-left .county__more {
+  text-align: left;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.vertical-align {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+/* Navigation
+-----------------------------------------------------------*/
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 1rem 2rem; }
+
+#main {
+  transition: 300ms;
+  background-color: white; }
+
+#main.active {
+  -webkit-transform: translateX(-40%);
+  -ms-transform: translateX(-40%);
+  transform: translateX(-40%);
+  transition: 300ms; }
+
+.menu {
+  float: right;
+  padding-top: 1.5rem; }
+  .menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    color: white; }
+  .menu li {
+    display: inline-block;
+    border-left: 2px solid #fff;
+    font-weight: 700; }
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: 300ms;
+    display: block;
+    padding: .2rem 1.5rem; }
+  .menu a:hover {
+    color: #98c6c0; }
+
+.mobile__menu {
+  display: none;
+  opacity: 0;
+  font-weight: 700;
+  margin-top: 1rem; }
+  .mobile__menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    color: white; }
+  .mobile__menu li {
+    margin-bottom: 1rem; }
+  .mobile__menu a {
+    color: white;
+    text-decoration: none;
+    transition: 300ms;
+    display: block;
+    padding: .2rem 1.5rem; }
+  .mobile__menu a:hover {
+    color: white; }
+  .mobile__menu.active {
+    display: block;
+    opacity: 1;
+    transition: 800ms;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    width: 150px; }
+
+.nav__logo {
+  display: none; }
+
+.nav__mobile {
+  text-align: right; }
+
+.nav__mobile-icon {
+  max-width: 30px; }
+
+@media (min-width: 992px) {
+  .nav__logo {
+    display: block;
+    max-width: 100px;
+    float: left; } }
+
+/* Hero Section
+-----------------------------------------------------------*/
+.hero {
+  background-color: #414042;
+  background-image: url(../images/mobile_header.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden; }
+
+.hero__video {
+  min-width: 100%;
+  position: absolute;
+  min-height: 850px;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 0; }
+
+.hero__title {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  display: inline-block;
+  margin: 3rem 0 0; }
+
+.hero__content {
+  padding: 10%;
+  z-index: 1;
+  max-width: 850px;
+  margin: auto; }
+
+@media (min-width: 992px) {
+  .hero__content {
+    padding: 10%; }
+  .hero__logo {
+    max-width: 350px;
+    display: block;
+    margin: auto; }
+  .hero {
+    background-color: none;
+    background-image: none; }
+  .hero__video {
+    display: block; }
+  .hero__title {
+    font-size: 2.5rem;
+    letter-spacing: 5px; } }
+
+/* Map Section
+-----------------------------------------------------------*/
+.map {
+  line-height: 0; }
+  .map #yolo:hover, .map #mendo:hover, .map #napa:hover, .map #sonoma:hover {
+    opacity: .5 !important;
+    pointer-events: auto !important;
+    transition: 200ms;
+    cursor: pointer;
+    z-index: 40; }
+
+#map {
+  width: 100%;
+  height: 700px;
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.patrick {
+  width: 100%; }
+
+.map__mobile {
+  width: 100%; }
+
+/* Value Prop Section
+-----------------------------------------------------------*/
+.value {
+  text-align: center;
+  background-color: #414042;
+  color: white;
+  padding: 1.3rem 0; }
+
+.value__icon {
+  max-width: 70px;
+  display: block;
+  margin: auto; }
+
+.value__title {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin: .5rem 0 0; }
+
+@media (min-width: 992px) {
+  .value {
+    padding: 3rem 0; }
+  .value__title {
+    margin: 1rem 0 0;
+    font-size: 2rem; }
+  .value__icon {
+    max-width: 105px; } }
+
+/* Category Section
+-----------------------------------------------------------*/
+.category {
+  overflow: hidden; }
+
+.category__title {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: auto; }
+
+.caterory__item {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  background-size: cover;
+  background-position: center center; }
+
+.caterory__item::after {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 300ms;
+  z-index: 1; }
+
+.caterory__item::before {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 500ms;
+  z-index: 2; }
+
+.caterory__item:hover .category__tag {
+  opacity: 0; }
+
+.category__background-wine::after {
+  background-image: url("../images/category__wine.jpg"); }
+
+.category__background-restaurant::after {
+  background-image: url("../images/category__restaurants.jpg"); }
+
+.category__background-outdoors::after {
+  background-image: url("../images/photo-outdoors.jpg"); }
+
+.category__background-artisan::after {
+  background-image: url("../images/photo-artisan.jpg"); }
+
+.category__background-historic::after {
+  background-image: url("../images/photo-historic.jpg"); }
+
+.category__background-spas::after {
+  background-image: url("../images/photo-spas.jpg"); }
+
+.category__tag {
+  text-align: center;
+  opacity: 1;
+  background-color: white;
+  position: absolute;
+  width: 100px;
+  z-index: 10;
+  top: 0;
+  margin: 0 1rem;
+  transition: 300ms; }
+
+.category__icon-title {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: .7rem;
+  display: inline-block;
+  margin: 0 .1rem; }
+
+.category__icon-title.wine {
+  color: #975352; }
+
+.category__icon-title.restaurants {
+  color: #c29d4c; }
+
+.category__icon-title.outdoors {
+  color: #9ea864; }
+
+.category__icon-title.events {
+  color: #467d85; }
+
+.category__icon-title.spas {
+  color: #98c6c0; }
+
+.category__icon-title.historic {
+  color: #304827; }
+
+.category__content {
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 3; }
+
+.category__content_mobile {
+  color: white;
+  padding: 2rem; }
+
+.category__wine .category__content_mobile {
+  background-color: #975352; }
+
+.category__restaurant .category__content_mobile {
+  background-color: #c29d4c; }
+
+.category__outdoors .category__content_mobile {
+  background-color: #9ea864; }
+
+.category__artisan .category__content_mobile {
+  background-color: #467d85; }
+
+.category__historic .category__content_mobile {
+  background-color: #304827; }
+
+.category__spas .category__content_mobile {
+  background-color: #98c6c0; }
+
+@media (min-width: 992px) {
+  .caterory__item {
+    height: 475px; }
+  .category__content {
+    opacity: 0;
+    transition: 500ms;
+    max-width: 550px;
+    margin: auto;
+    padding: 1rem; }
+  .caterory__item:hover .category__content {
+    opacity: 1; }
+  .caterory__item:hover::after {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
+  .category__background-wine.caterory__item:hover::before {
+    background-color: rgba(151, 83, 82, 0.8); }
+  .category__background-restaurant.caterory__item:hover::before {
+    background-color: rgba(194, 157, 76, 0.8); }
+  .category__background-outdoors.caterory__item:hover::before {
+    background-color: rgba(158, 168, 100, 0.8); }
+  .category__background-artisan.caterory__item:hover::before {
+    background-color: rgba(70, 125, 133, 0.8); }
+  .category__background-historic.caterory__item:hover::before {
+    background-color: rgba(48, 72, 39, 0.8); }
+  .category__background-spas.caterory__item:hover::before {
+    background-color: rgba(152, 198, 192, 0.8); }
+  .row.thin-gutters {
+    margin-right: -0.1rem;
+    margin-left: -0.1rem;
+    margin-top: -0.1rem;
+    margin-bottom: -0.1rem; }
+    .row.thin-gutters > [class^="col-"],
+    .row.thin-gutters > [class*=" col-"] {
+      padding-right: .1rem;
+      padding-left: .1rem;
+      padding-top: .1rem;
+      padding-bottom: .1rem; } }
+
+/* Fact Section
+-----------------------------------------------------------*/
+.fact {
+  background-color: #414042;
+  color: white;
+  text-align: center;
+  padding: 2rem 0; }
+
+.fact__title {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700; }
+
+.fact__text {
+  max-width: 70px;
+  margin: 1rem 0; }
+
+.fact__title::after {
+  display: block;
+  content: " ";
+  margin: 1.5rem auto 1.5rem;
+  height: 1px;
+  background-color: #efc878;
+  width: 100px; }
+
+.fact-slider {
+  padding: 0 2rem; }
+  .fact-slider span {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300; }
+
+@media (min-width: 992px) {
+  .fact-slider {
+    text-align: left; }
+    .fact-slider .slick-track {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+  .fact__text {
+    position: relative;
+    top: -8px;
+    margin: 0 0; }
+  .fact__text-wrap {
+    text-align: right; } }
+
+/* County Section
+-----------------------------------------------------------*/
+.carousel-indicators {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -15%;
+  text-align: right;
+  list-style: none; }
+
+.yolo__text {
+  max-width: 300px;
+  display: block;
+  margin: 1rem auto; }
+
+.napa__text {
+  max-width: 300px;
+  display: block;
+  margin: 1rem auto; }
+
+.sonoma__text {
+  max-width: 320px;
+  display: block;
+  margin: 1rem auto; }
+
+.mendo__text {
+  max-width: 370px;
+  display: block;
+  margin: 1rem auto; }
+
+.county__row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.county__paragraph {
+  line-height: 2;
+  font-size: .95rem;
+  max-width: 700px;
+  margin: auto; }
+
+.county__more {
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.county__icon {
+  max-width: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  margin-right: 1rem; }
+
+.county__cls-1 {
+  fill: none;
+  stroke: #9ea864;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.51px; }
+
+.yolo .county__cls-1 {
+  stroke: #c29d4c; }
+
+.napa .county__cls-1 {
+  stroke: #9ea864; }
+
+.sonoma .county__cls-1 {
+  stroke: #81af91; }
+
+.mendo .county__cls-1 {
+  stroke: #56898f; }
+
+.county-slide {
+  height: 600px;
+  width: 100%;
+  background-position: center center; }
+
+.yolo {
+  color: #c29d4c; }
+
+.napa {
+  color: #9ea864; }
+
+.sonoma {
+  color: #81af91; }
+
+.mendo {
+  color: #56898f; }
+
+/* County Modals
+-----------------------------------------------------------*/
+.wine {
+  color: #975352; }
+
+.outdoors {
+  color: #9ea864; }
+
+.restaurants {
+  color: #c29d4c; }
+
+.events {
+  color: #467d85; }
+
+.historic {
+  color: #304827; }
+
+.spas {
+  color: #98c6c0; }
+
+.modal-content {
+  border: none;
+  border-radius: 0; }
+
+.modal-slide {
+  background-position: center center;
+  height: 700px;
+  width: 100vw; }
+
+.modal__intro {
+  background: #c29d4c;
+  color: white;
+  text-align: center; }
+  .modal__intro a {
+    color: white; }
+  .modal__intro.napa__intro {
+    background: #9ea864; }
+  .modal__intro.sonoma__intro {
+    background: #81af91; }
+  .modal__intro.mendo__intro {
+    background: #56898f; }
+
+.modal__title {
+  position: absolute;
+  z-index: 10;
+  max-width: 600px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center; }
+  .modal__title img {
+    width: 600px;
+    max-width: 80vw; }
+
+.modal__slider-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.modal__intro-inner {
+  max-width: 850px;
+  margin: auto;
+  padding: 3rem 0 2rem;
+  line-height: 2; }
+
+.modal__close {
+  position: fixed;
+  z-index: 2;
+  right: 15px;
+  top: 10px;
+  cursor: pointer; }
+  .modal__close svg {
+    width: 50px; }
+
+.modal__icon {
+  max-width: 100px;
+  display: block;
+  margin: auto; }
+
+.modal__icon-title {
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .7rem;
+  padding-bottom: 1rem; }
+
+.modal__categories {
+  max-width: 850px;
+  margin: auto; }
+
+.modal__categories .row {
+  padding: 2rem 0; }
+
+.modal__button {
+  display: inline-block;
+  border: 2px solid white;
+  padding: .5rem 1rem;
+  font-weight: 700;
+  margin: 1rem auto 3rem;
+  cursor: pointer;
+  transition: 300ms; }
+
+.modal__button.yolo__button:hover {
+  background-color: white;
+  color: #c29d4c; }
+
+.modal__button.napa__button:hover {
+  background-color: white;
+  color: #9ea864; }
+
+.modal__button.sonoma__button:hover {
+  background-color: white;
+  color: #81af91; }
+
+.modal__button.mendo__button:hover {
+  background-color: white;
+  color: #56898f; }
+
+.yolo__close .cls-1 {
+  fill: #c29d4c; }
+
+.napa__close .cls-1 {
+  fill: #9ea864; }
+
+.sonoma__close .cls-1 {
+  fill: #81af91; }
+
+.mendo__close .cls-1 {
+  fill: #56898f; }
+
+.minimap {
+  max-width: 100%; }
+
+.weather {
+  margin: 4rem auto;
+  color: #58595b;
+  text-align: center; }
+  .weather .col-xs-12 {
+    padding: 1rem; }
+
+.weather__condition, .weather__temp {
+  font-size: 2rem;
+  font-weight: 700;
+  vertical-align: middle; }
+
+.weather__condition {
+  padding-left: 1rem; }
+
+.weather_f {
+  max-width: 50px; }
+
+.weather__temp {
+  padding-left: 1rem; }
+
+.weather_gauge {
+  max-width: 25px;
+  float: left; }
+
+.high-low {
+  float: left; }
+  .high-low div {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 1rem;
+    text-align: left; }
+
+.high-low-wrap {
+  padding-left: 1rem;
+  width: 155px;
+  margin: 0 auto;
+  position: relative; }
+
+.instagram {
+  position: relative;
+  top: 40px;
+  overflow: hidden;
+  min-height: 560px; }
+
+.insta__set {
+  position: relative;
+  top: 40px;
+  z-index: 2;
+  max-width: 1945px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%; }
+
+.insta__screen {
+  width: 220px;
+  height: 382px;
+  background-color: black;
+  position: absolute;
+  z-index: 3;
+  margin: 111px auto 0;
+  left: 0;
+  right: 0;
+  overflow-y: hidden; }
+
+.insta__content {
+  width: 100%; }
+
+/* Newsletter Section
+-----------------------------------------------------------*/
+.newsletter {
+  text-align: center;
+  color: white;
+  background-image: url("../images/newsletter.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0; }
+
+.newsletter__hashtag {
+  font-weight: 700;
+  margin-bottom: 2rem; }
+  .newsletter__hashtag .social__wrap {
+    vertical-align: middle; }
+
+.newsletter__text {
+  max-width: 400px;
+  display: block;
+  margin: auto; }
+
+.newsletter__email {
+  border: 0;
+  color: white;
+  display: block;
+  margin: 1rem auto;
+  padding: .75rem .5rem;
+  min-width: 250px;
+  text-align: center;
+  background-color: rgba(100, 130, 86, 0.54);
+  border-bottom: 2px solid #fff;
+  border-radius: 0; }
+
+.newsletter__button {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: .2rem 1rem;
+  color: white;
+  transition: 400ms;
+  cursor: pointer; }
+
+.results {
+  min-height: 136px; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
+/* Scenic Slider Section
+-----------------------------------------------------------*/
+.scenic-slider_wrap {
+  position: relative; }
+
+.scenic-slider {
+  background-color: #414042;
+  position: relative;
+  height: 450px;
+  overflow: hidden; }
+  .scenic-slider img {
+    max-width: 100%;
+    width: 100%; }
+
+.sr__text {
+  position: absolute;
+  left: 1rem;
+  top: 3rem;
+  max-width: 40%;
+  z-index: 20; }
+
+.scenic-slide {
+  width: 100%;
+  height: 450px;
+  background-position: center center; }
+
+/* Footer Section
+-----------------------------------------------------------*/
+.footer {
+  background-color: #414042;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 0 1rem;
+  text-align: center; }
+  .footer h6 {
+    text-transform: uppercase;
+    font-weight: 600; }
+  .footer h6::after {
+    display: block;
+    content: " ";
+    margin: .5rem auto 1.5rem;
+    height: 1px;
+    background-color: #98c6c0;
+    width: 50px; }
+  .footer a {
+    color: white;
+    text-decoration: none;
+    transition: 200ms; }
+  .footer a:hover {
+    color: #98c6c0; }
+  .footer [class^="col-"],
+  .footer [class*=" col-"] {
+    padding: 1rem 0 1.7rem; }
+
+.icon__set {
+  padding-top: 5px; }
+
+.footer__logo {
+  max-width: 100px;
+  display: block;
+  margin: auto; }
+
+.footer__counties {
+  margin-bottom: 1.5rem; }
+  .footer__counties td {
+    min-width: 135px; }
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  transition: 300ms; }
+
+.social__icon:hover {
+  width: 20px;
+  height: 20px;
+  fill: #98c6c0; }
+
+.social__wrap {
+  display: inline-block;
+  margin: 0 .75rem; }
+
+table {
+  margin: 0 auto; }
+
+@media (min-width: 992px) {
+  .footer {
+    text-align: left;
+    padding: 2rem 0; }
+    .footer table {
+      margin: 0 0; }
+    .footer h6::after {
+      margin: .5rem 0 .75rem; }
+  .social__wrap {
+    margin: 0 1.5rem 0 0; } }
