@@ -133,7 +133,7 @@ nav {
   overflow: hidden; }
 
 .hero__down {
-  max-width: 100px;
+  max-width: 50px;
   margin-top: 1rem;
   cursor: pointer; }
 
@@ -578,6 +578,72 @@ nav {
 .spas {
   color: #98c6c0; }
 
+.wine-text {
+  text-decoration: none;
+  color: #975352;
+  font-weight: 700;
+  opacity: .9;
+  transition: 300ms; }
+  .wine-text:hover {
+    opacity: 1;
+    color: #975352;
+    text-decoration: none; }
+
+.outdoors-text {
+  text-decoration: none;
+  color: #9ea864;
+  font-weight: 700;
+  opacity: .9;
+  transition: 300ms; }
+  .outdoors-text:hover {
+    opacity: 1;
+    color: #9ea864;
+    text-decoration: none; }
+
+.restaurants-text {
+  text-decoration: none;
+  color: #c29d4c;
+  font-weight: 700;
+  opacity: .9;
+  transition: 300ms; }
+  .restaurants-text:hover {
+    opacity: 1;
+    color: #c29d4c;
+    text-decoration: none; }
+
+.events-text {
+  text-decoration: none;
+  color: #467d85;
+  font-weight: 700;
+  opacity: .9;
+  transition: 300ms; }
+  .events-text:hover {
+    opacity: 1;
+    color: #467d85;
+    text-decoration: none; }
+
+.historic-text {
+  text-decoration: none;
+  color: #304827;
+  font-weight: 700;
+  opacity: .9;
+  transition: 300ms; }
+  .historic-text:hover {
+    opacity: 1;
+    color: #304827;
+    text-decoration: none; }
+
+.spas-text {
+  text-decoration: none;
+  color: #98c6c0;
+  font-weight: 700;
+  opacity: .9;
+  transition: 300ms; }
+  .spas-text:hover {
+    opacity: 1;
+    color: #98c6c0;
+    text-decoration: none; }
+
 .modal-content {
   border: none;
   border-radius: 0; }
@@ -738,7 +804,7 @@ nav {
   text-decoration: none;
   display: block;
   transition: 300ms;
-  opacity: .5; }
+  opacity: .7; }
 
 .county_link:hover {
   text-decoration: none;
