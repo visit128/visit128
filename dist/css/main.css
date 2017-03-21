@@ -32,6 +32,44 @@ body {
   -ms-flex-align: center;
   align-items: center; }
 
+.bs-modal .modal-content {
+  background-color: rgba(70, 125, 133, 0.8); }
+
+.bs-modal .modal-header {
+  border: none;
+  padding-bottom: 0; }
+
+.bs-modal .modal-body {
+  padding-top: 0;
+  padding-bottom: 2rem; }
+
+.bs-modal form {
+  max-width: 400px;
+  margin: auto; }
+
+.bs-modal label {
+  margin-top: .6rem;
+  margin-bottom: .2rem;
+  font-size: .8rem; }
+
+.bs-modal input {
+  width: 100%;
+  border: none; }
+
+.bs-modal input.button {
+  max-width: 150px;
+  display: block;
+  margin: .5rem auto;
+  text-transform: uppercase;
+  padding: .75rem 1.5rem;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+  cursor: pointer; }
+
+.bs-modal .bs-results {
+  text-align: center; }
+
 /* Navigation
 -----------------------------------------------------------*/
 nav {
